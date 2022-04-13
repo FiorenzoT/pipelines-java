@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/fiorenzoTesting/testing/_apis/build/status/FiorenzoT.pipelines-java?branchName=master)](https://dev.azure.com/fiorenzoTesting/testing/_build/latest?definitionId=1&branchName=master)
 
 # Contributing
 
