@@ -12,13 +12,12 @@ pool:
 
 container: ubuntu:18.04
 
-
 steps:
 
 - task: CmdLine@2
   inputs:
     script: |
-      apt-get install sudo
+      su -
   displayName: ListingFileDir
 
 #- task: Maven@3
