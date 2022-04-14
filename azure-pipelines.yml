@@ -14,7 +14,8 @@ container: ubuntu:18.04
 
 
 steps:
-- script: printenv
+- script: printenv && echo hello
+
 
 - task: Maven@3
   inputs:
