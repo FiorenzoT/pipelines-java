@@ -13,11 +13,24 @@ pool:
 container: ubuntu:18.04
 
 steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
+- task: CmdLine@2
+  inputs:
+    script: 'su -'
 
 - task: CmdLine@2
   inputs:
     script: |
-      su -
+      ls
   displayName: ListingFileDir
 
 #- task: Maven@3
