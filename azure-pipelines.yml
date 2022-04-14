@@ -10,8 +10,12 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+container: ubuntu:18.04
+
 
 steps:
+- script: printenv
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
