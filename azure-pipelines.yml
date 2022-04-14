@@ -21,7 +21,7 @@ steps:
       for entry in `ls $search_dir`; do
           echo $entry
       done
-  displayName: cat directory
+  displayName: ListingFile
 
 #- task: Maven@3
 #  inputs:
