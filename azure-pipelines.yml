@@ -15,8 +15,13 @@ container: ubuntu:18.04
 
 steps:
 - script: printenv && echo hello
-- script: apt install mvn
 
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      
+      echo Hello world
 
 - task: Maven@3
   inputs:
