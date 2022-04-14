@@ -10,11 +10,8 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-container: ubuntu:18.04
 
 steps:
-
-- bash: "apt update && apt install -y some package"
 
 - task: CmdLine@2
   inputs:
