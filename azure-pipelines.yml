@@ -16,14 +16,12 @@ container: ubuntu:18.04
 steps:
 
 - task: CmdLine@2
-- script: date /t
-  displayName: Get the date
-#  inputs:
-#    script: |
-#      for entry in `ls $search_dir`; do
-#          echo $entry
-#      done
-
+  inputs:
+    script: |
+      for entry in `ls $search_dir`; do
+          echo $entry
+      done
+  displayName: cat directory
 
 #- task: Maven@3
 #  inputs:
