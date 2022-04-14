@@ -15,7 +15,7 @@ container: ubuntu:18.04
 
 steps:
 - script: printenv && echo hello
-- script: sudo apt install mvn
+- script: apt install mvn
 
 
 - task: Maven@3
